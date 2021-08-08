@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   font-family: 'TT Mussels';
+  box-sizing: border-box;
 }
 
 body {
@@ -15,9 +16,16 @@ body {
   src: url(../fonts/TTMussels-DemiBold.ttf);
 }
 
+.block {
+  background: url(../icons/flashup-promo-best---1.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 60%;
+}
+
 .container {
-  width: 900px;
-  border: 1px solid #fff;
+  width: 80%;
+  box-sizing: border-box;
   margin: 0 auto;
 }
 
@@ -31,6 +39,7 @@ header nav {
   display: flex;
   align-items: center;
   margin: 35px 0;
+  margin-right: 15px;
 }
 
 header nav ul {
@@ -51,7 +60,7 @@ header nav ul li a {
   transition: 0.3s linear;
   text-decoration: none;
   color: #fff;
-  font-size: 14px;
+  font-size: 12px;
 }
 
 header nav ul li a:hover {
@@ -63,13 +72,14 @@ header nav ul li a:hover {
   color: #79b82b;
   background-color: transparent;
   border: 1px solid #79b82b;
-  width: 150px;
-  height: 40px;
+  width: 120px;
+  height: 32px;
   border-radius: 8px;
   cursor: pointer;
   display: flex;
   align-items: center;
   margin-left: 13px;
+  font-size: 11px;
 }
 
 .show-Btn:hover {
@@ -78,10 +88,11 @@ header nav ul li a:hover {
 }
 
 .show-Btn::before {
-  margin: 0 8px;
+  margin: 0 5px;
   margin-top: 2px;
   content: url(../icons/old-key.svg);
-  margin-left: 10px;
+  margin-left: 9px;
+  
 }
 
 .show-Btn:hover::before {
@@ -92,7 +103,7 @@ header nav ul li a:hover {
   border: none;
   background-color: transparent;
   color: #00b0e2;
-  font-size: 14px;
+  font-size: 11px;
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -105,10 +116,11 @@ header nav ul li a:hover {
 }
 
 .nav-lang a {
-  border-radius: 8px;
+  border-radius: 5px;
   color: #fff;
-  padding: 5px 7px;
+  padding: 3px 5px;
   text-decoration: none;
+  font-size: 12px;
 }
 
 .nav-lang .nav-lang-active {
@@ -121,11 +133,21 @@ header nav ul li a:hover {
   align-items: center;
   justify-content: space-between;
   margin-top: 30px;
-  border: 2px solid blue;
+  box-sizing: border-box;
 }
 
 .header-Text-Car {
   color: #fff;
+}
+
+.header-Text-Car  h1 {
+  font-size: 37px;
+  font-weight: 900;
+}
+
+.header-Text-Car img {
+  width: 350px;
+  height: 210px;
 }
 
 .header-Logo-Flash {
@@ -146,6 +168,7 @@ header nav ul li a:hover {
   box-sizing: border-box;
   width: 100%;
   height: 600px;
+  margin-left: 17px;
 }
 
 .flash-img-box::before {
@@ -153,15 +176,52 @@ header nav ul li a:hover {
   
 }
 
+.car-New-Text {
+  vertical-align: top;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  margin: 8px 0;
+  margin-left: -11px;
+  padding-left: 11px;
+  padding-right: 18px;
+  overflow: hidden;
+}
 
+.car-New-Text .container-New {
+  background-color: #79b82b;
+  color: #000;
+  width: 283px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  margin-left: -22px;
+  padding-left: 22px;
+  padding-right: 18px;
+  transform: skew(29deg);
+  margin-bottom: 28px;
+}
 
+.car-New-Text .container-New span {
+  transform: skew(-29deg);
+  font-size: 25px;
+  font-weight: 100;
+}
 
+.header-Text-Car p {
+  width: 305px;
+  font-size: 20px;
+  margin-bottom: 9px;
+}
 
+.span-Text-Green {
+  color: #79b82b;
+}
 
-
-
-
-
+.span-Text-Blue {
+  color: #00b0e2;
+}
 
 
 
